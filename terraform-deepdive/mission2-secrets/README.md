@@ -41,6 +41,10 @@ mission2-secrets/
 
 ### SSM Parameter Store 확인
 
+<img width="900" alt="ssm" src="https://github.com/user-attachments/assets/f64cefb5-5996-4560-b676-49ebac356d91" />
+
 ---
 
 ### Secrets Manager 확인
+
+<img width="900" alt="secrets" src="https://github.com/user-attachments/assets/c63d8338-628c-42e2-abb6-86bd9bbaad73" />
