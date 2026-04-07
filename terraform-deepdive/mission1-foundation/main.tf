@@ -6,7 +6,14 @@ terraform {
       version = "~> 5.0"
     }
   }
-}
+
+  backend "s3" {
+    bucket = "yjp-deepdive-terraform-state"
+    key    = "mission1/terraform.tfstate"
+    region = "eu-west-2"
+  }
+}  
+
 
 provider "aws" {
   region = var.aws_region
