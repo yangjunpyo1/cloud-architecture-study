@@ -5,15 +5,15 @@
 ---
 
 ## 아키텍처 개요
-
-주문 이벤트 1개가 SNS를 통해 3개의 SQS 큐로 동시에 전달되는 Fan-out 패턴입니다.
+```
 주문 발생
-↓
+    ↓
 SNS Topic (order-events)
-↓
+    ↓
 order-process 큐  → 결제 처리
 order-notify 큐   → 고객 알림
 order-analytics 큐 → 데이터 분석
+```
 
 ---
 
@@ -32,11 +32,13 @@ order-analytics 큐 → 데이터 분석
 ---
 
 ## Terraform 파일 구조
+```
 mission3-messaging/
 ├── main.tf           # 리소스 생성
 ├── variables.tf      # 변수 선언
 ├── outputs.tf        # 출력값
 └── terraform.tfvars  # 실제 변수 값
+```
 
 ---
 
