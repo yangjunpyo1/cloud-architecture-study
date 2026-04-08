@@ -22,11 +22,13 @@ AWS 애플리케이션 배포를 위한 기반 네트워크 인프라를 Terrafo
 ---
 
 ## Terraform 파일 구조
+```
 mission1-foundation/
 ├── main.tf           # 리소스 생성
 ├── variables.tf      # 변수 선언
 ├── outputs.tf        # 출력값
 └── terraform.tfvars  # 실제 변수 값
+```
 
 ---
 
