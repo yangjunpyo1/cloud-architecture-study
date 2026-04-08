@@ -5,12 +5,14 @@
 ---
 
 ## 아키텍처 개요
+```
 EC2 앱 서버
-↓
+    ↓
 Redis (ElastiCache)
-↓
+    ↓
 자주 읽는 데이터 → Redis에서 빠르게 응답 (1ms)
 없는 데이터      → RDS에서 읽고 Redis에 저장
+```
 
 ---
 
@@ -39,11 +41,13 @@ Redis (ElastiCache)
 ---
 
 ## Terraform 파일 구조
+```
 mission4-cache/
 ├── main.tf           # 리소스 생성
 ├── variables.tf      # 변수 선언
 ├── outputs.tf        # 출력값
 └── terraform.tfvars  # 실제 변수 값
+```
 
 ---
 
