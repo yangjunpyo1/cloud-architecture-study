@@ -19,11 +19,13 @@
 ---
 
 ## Terraform 파일 구조
+```
 mission2-secrets/
 ├── main.tf           # 리소스 생성
 ├── variables.tf      # 변수 선언
 ├── outputs.tf        # 출력값
 └── terraform.tfvars  # 실제 변수 값
+```
 
 ---
 
