@@ -5,14 +5,17 @@
 ---
 
 ## 아키텍처 개요
+```
 modules/
 ├── networking/   → VPC, SG, IAM (Mission 1)
 ├── secrets/      → SSM, Secrets Manager (Mission 2)
 ├── messaging/    → SNS, SQS (Mission 3)
 └── cache/        → ElastiCache Redis (Mission 4)
+
 environments/
 ├── dev/          → 모듈 호출 + 작은 사양
 └── prod/         → 모듈 호출 + 큰 사양
+```
 
 ---
 
@@ -31,6 +34,7 @@ environments/
 ---
 
 ## Terraform 파일 구조
+```
 mission5-integration/
 ├── modules/
 │   ├── networking/
@@ -41,16 +45,17 @@ mission5-integration/
 │   ├── messaging/
 │   └── cache/
 └── environments/
-├── dev/
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   └── terraform.tfvars
-└── prod/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-└── terraform.tfvars
+    ├── dev/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   ├── outputs.tf
+    │   └── terraform.tfvars
+    └── prod/
+        ├── main.tf
+        ├── variables.tf
+        ├── outputs.tf
+        └── terraform.tfvars
+```
 
 ---
 
